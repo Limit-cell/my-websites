@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的网站合集</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: radial-gradient(ellipse at 50% 0%, #16233f 0%, #060a13 55%);
+    color: #dbe4f5; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px;
+  }
+  .wrap { max-width: 760px; width: 100%; text-align: center; }
+  h1 { font-size: 34px; letter-spacing: 4px; background: linear-gradient(120deg, #22d3ee, #8b5cf6); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 12px; }
+  .sub { color: #7d8db1; font-size: 14px; letter-spacing: 2px; margin-bottom: 44px; font-family: Consolas, monospace; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .card {
+    display: block; text-align: left; padding: 26px 24px; border-radius: 14px; text-decoration: none;
+    background: rgba(14, 22, 40, .75); border: 1px solid rgba(96, 165, 250, .22);
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .card:hover { transform: translateY(-5px); border-color: rgba(34, 211, 238, .55); box-shadow: 0 0 30px rgba(34, 211, 238, .16); }
+  .card .tag { font-family: Consolas, monospace; font-size: 12px; color: #22d3ee; letter-spacing: 2px; }
+  .card h2 { margin: 10px 0 8px; font-size: 19px; letter-spacing: 2px; color: #fff; }
+  .card p { font-size: 13.5px; color: #7d8db1; line-height: 1.8; }
+  .card .go { margin-top: 14px; font-size: 13px; color: #22d3ee; font-family: Consolas, monospace; }
+  @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>我的网站合集</h1>
+    <p class="sub">// MY_SITES_PORTAL</p>
+    <div class="cards">
+      <a class="card" href="event-site/">
+        <span class="tag">活动网站</span>
+        <h2>未来智造 · AI创新体验日</h2>
+        <p>人工智能主题讲座＋互动工作坊 · 报名入口与活动信息</p>
+        <span class="go">进入 →</span>
+      </a>
+      <a class="card" href="autobiography-site/">
+        <span class="tag">自传网站</span>
+        <h2>LJM · 我的自传</h2>
+        <p>个人主页 · 科技感 UI · 成长足迹与未来展望</p>
+        <span class="go">进入 →</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
