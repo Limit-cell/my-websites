@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LJM · 我的自传 | 科技感个人主页</title>
+<meta name="description" content="LJM 的个人自传网站：电气工程与智能控制专业大一学生，来自辽宁庄河，展示成长足迹、个人特质与未来展望。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- 背景特效层 -->
+<div class="bg-fx" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+  <div class="glow glow-3"></div>
+  <div class="scanline"></div>
+  <div class="particles" id="particles"></div>
+</div>
+
+<!-- ======== 顶栏 ======== -->
+<header class="topbar" id="topbar">
+  <div class="container bar-inner">
+    <a href="#home" class="logo"><span class="logo-mark">&lt;</span>LJM<span class="logo-blink">_</span><span class="logo-mark">&gt;</span></a>
+    <nav class="main-nav" id="mainNav" aria-label="主导航">
+      <a href="#home">首页</a>
+      <a href="#about">关于我</a>
+      <a href="#traits">个人特质</a>
+      <a href="#journey">成长足迹</a>
+      <a href="#future">未来展望</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="打开菜单" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- ======== 首页 Hero ======== -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="hero-left reveal">
+      <p class="hero-kicker"><span class="prompt-sign">$</span> // 我的自传 · SELF PORTRAIT</p>
+      <h1 class="hero-name">LJM</h1>
+      <p class="hero-role">电气工程与智能控制 <span class="accent">·</span> 大一学生</p>
+      <p class="hero-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>辽宁 · 庄河 &nbsp;|&nbsp; 沈阳工业大学辽阳分校</p>
+      <div class="hero-badges">
+        <span class="badge">19 岁</span>
+        <span class="badge">生于 4.18</span>
+        <span class="badge">自律 · 钻研</span>
+        <span class="badge">动手派</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-solid">进入主页 <span class="btn-arrow">→</span></a>
+        <a href="#journey" class="btn btn-ghost">查看成长足迹</a>
+      </div>
+    </div>
+
+    <!-- 终端卡片 -->
+    <div class="terminal reveal" aria-label="系统信息终端">
+      <div class="terminal-bar">
+        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+        <span class="term-title">LJM@profile: ~</span>
+      </div>
+      <div class="terminal-body">
+        <p class="t-line"><span class="t-dim"># 个人系统初始化完成</span></p>
+        <p class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
+        <p class="t-line t-out">LJM — 电气工程与智能控制专业 · 大一</p>
+        <p class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat intro.txt</span></p>
+        <p class="t-line t-out" id="typeText"><span class="caret"></span></p>
+        <p class="t-line"><span class="t-prompt">$</span> <span class="caret-big"></span></p>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="向下滚动"><span class="mouse"><span class="wheel"></span></span></a>
+</section>
+
+<!-- ======== 关于我 ======== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title">关于我<span class="sec-cursor">_</span></h2>
+      <p class="sec-sub">// ABOUT_ME</p>
+    </div>
+    <div class="about-grid">
+      <div class="profile-card reveal">
+        <div class="profile-hd">
+          <div class="avatar">LJM</div>
+          <div>
+            <h3>LJM</h3>
+            <p>电气工程与智能控制 · 大一学生</p>
+          </div>
+        </div>
+        <ul class="profile-list">
+          <li><span class="k">NAME</span><span class="v">LJM</span></li>
+          <li><span class="k">AGE</span><span class="v">19</span></li>
+          <li><span class="k">BIRTH</span><span class="v">4 月 18 日</span></li>
+          <li><span class="k">HOMETOWN</span><span class="v">辽宁省 · 庄河市</span></li>
+          <li><span class="k">SCHOOL</span><span class="v">沈阳工业大学辽阳分校</span></li>
+          <li><span class="k">MAJOR</span><span class="v">电气工程与智能控制</span></li>
+          <li><span class="k">STATUS</span><span class="v accent-ok">● 大一在读 · ACTIVE</span></li>
+        </ul>
+      </div>
+      <div class="about-text reveal">
+        <h3>少年初长成，逐梦正当时</h3>
+        <p>我叫 <strong>LJM</strong>，籍贯辽宁省庄河市，出生于四月十八日，今年十九岁，现就读于沈阳工业大学辽阳分校电气工程与智能控制专业，是一名大一学生。</p>
+        <p>时光荏苒，回望十九载的成长历程，在家庭的培育、学校的教导与自我的沉淀中，我褪去年少懵懂，逐渐成长为<strong class="hl">踏实自律、心怀进取</strong>的新时代青年。</p>
+        <p>我成长于朴实和睦的普通家庭，父母勤劳正直、待人真诚。良好的家庭教育让我从小养成了脚踏实地、沉稳内敛、懂得感恩的品格。家人始终教导我做事严谨踏实、做人善良正直，这也成为我一路走来恪守的<strong class="hl">人生准则</strong>。</p>
+        <p>长久的家风熏陶，让我拥有了较强的自制力和抗压能力，面对事情习惯冷静思考、认真对待。</p>
+        <div class="quote-line"><span class="quote-mark">“</span>踏实自律 · 心怀进取 <span class="quote-mark">”</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 个人特质 ======== -->
+<section class="section section-alt" id="traits">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">个人特质<span class="sec-cursor">_</span></h2>
+      <p class="sec-sub">// CHARACTER_SYSTEM</p>
+    </div>
+
+    <div class="trait-grid">
+      <article class="trait-card reveal">
+        <div class="trait-icon icon-1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/><path d="M10 7h.01M14 7h.01"/></svg></div>
+        <h3>家风品格</h3>
+        <p>朴实和睦的家庭中成长，养成脚踏实地、沉稳内敛、懂得感恩的品格；做事严谨踏实、做人善良正直。</p>
+        <ul class="tag-list"><li>自制力</li><li>抗压</li><li>感恩</li></ul>
+      </article>
+      <article class="trait-card reveal">
+        <div class="trait-icon icon-2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></svg></div>
+        <h3>学业态度</h3>
+        <p>勤学善思、求真务实，从不敷衍懈怠；遇到难题沉下心探究原理、梳理逻辑，培养扎实的学习能力与严谨思维。</p>
+        <ul class="tag-list"><li>钻研</li><li>复盘</li><li>严谨</li></ul>
+      </article>
+      <article class="trait-card reveal">
+        <div class="trait-icon icon-3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>自律生活</h3>
+        <p>自律且阳光，保持规律作息；长期坚持健身减脂，磨练毅力恒心；热衷研究电脑硬件与工程设备，擅长排查钻研。</p>
+        <ul class="tag-list"><li>健身</li><li>硬件</li><li>动手</li></ul>
+      </article>
+      <article class="trait-card reveal">
+        <div class="trait-icon icon-4" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>人际自省</h3>
+        <p>沉稳真诚、友善包容，与同学师长相处和睦，乐于互帮互助；始终保持自省，主动改正缺点、完善自我。</p>
+        <ul class="tag-list"><li>真诚</li><li>包容</li><li>自省</li></ul>
+      </article>
+    </div>
+
+    <div class="data-panel reveal">
+      <div class="panel-title">
+        <span class="panel-led"></span> 特质指数 <span class="t-dim">// TRAIT_INDEX</span>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <span class="bar-label">自制力 SELF-CONTROL</span>
+          <div class="bar-track"><span class="bar-fill" data-w="92" style="--w:92%"></span></div>
+          <span class="bar-val">92</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">抗压能力 STRESS-RESIST</span>
+          <div class="bar-track"><span class="bar-fill" data-w="88" style="--w:88%"></span></div>
+          <span class="bar-val">88</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">钻研精神 FOCUS</span>
+          <div class="bar-track"><span class="bar-fill" data-w="90" style="--w:90%"></span></div>
+          <span class="bar-val">90</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">动手能力 PRACTICE</span>
+          <div class="bar-track"><span class="bar-fill" data-w="86" style="--w:86%"></span></div>
+          <span class="bar-val">86</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">逻辑思维 LOGIC</span>
+          <div class="bar-track"><span class="bar-fill" data-w="84" style="--w:84%"></span></div>
+          <span class="bar-val">84</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">协作意识 TEAMWORK</span>
+          <div class="bar-track"><span class="bar-fill" data-w="82" style="--w:82%"></span></div>
+          <span class="bar-val">82</span>
+        </div>
+      </div>
+      <p class="panel-note">* 指数根据自传描述综合评估，仅作可视化展示</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 成长足迹 ======== -->
+<section class="section" id="journey">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">成长足迹<span class="sec-cursor">_</span></h2>
+      <p class="sec-sub">// GROWTH_LOG</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-node"><span class="tl-dot"></span><span class="tl-time">家庭启蒙</span></div>
+        <div class="tl-card">
+          <h3>家风熏陶 · 品格养成</h3>
+          <p>在朴实和睦的家庭中长大，父母勤劳正直、待人真诚。从小养成脚踏实地、沉稳内敛、懂得感恩的品格，确立"做事严谨踏实、做人善良正直"的人生准则。</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-node"><span class="tl-dot"></span><span class="tl-time">求学之路</span></div>
+        <div class="tl-card">
+          <h3>勤学善思 · 夯实基础</h3>
+          <p>始终秉持勤学善思、求真务实的学习态度，从不敷衍懈怠；遇到难题沉下心探究原理、梳理逻辑，在日积月累中培养扎实的学习能力与严谨的思维方式。</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-node"><span class="tl-dot"></span><span class="tl-time">大学阶段</span></div>
+        <div class="tl-card">
+          <h3>深耕工科 · 专业启航</h3>
+          <p>考入沈阳工业大学辽阳分校，就读电气工程与智能控制专业。认真钻研专业课程，夯实数理、电路等核心基础，主动学习工程软件，不断提升专业素养与实践能力。</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-node"><span class="tl-dot"></span><span class="tl-time">未来启航</span></div>
+        <div class="tl-card">
+          <h3>坚守初心 · 奔赴山海</h3>
+          <p>站在崭新的人生起点，将继续以严谨踏实的态度深耕专业、锤炼品格、提升能力，保持进取之心，脚踏实地、砥砺前行，努力成为有理想、有本领、有担当的青年。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 未来展望 ======== -->
+<section class="section future" id="future">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">未来展望<span class="sec-cursor">_</span></h2>
+      <p class="sec-sub">// FUTURE_VIEW</p>
+    </div>
+    <div class="future-quote reveal">
+      <span class="fq-mark">“</span>
+      <p class="fq-main">少年不惧岁月长，<br>彼方尚有荣光在。</p>
+      <p class="fq-sub">站在崭新的人生起点，坚守初心、不负韶华，<br>奔赴属于自己的人生山海。</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======== 页脚 ======== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="f-logo">&lt;LJM_&gt; · 我的自传</p>
+    <p class="f-info">沈阳工业大学辽阳分校 · 电气工程与智能控制</p>
+    <p class="f-copy">© 2026 LJM · SELF PORTRAIT SYSTEM v1.0</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
